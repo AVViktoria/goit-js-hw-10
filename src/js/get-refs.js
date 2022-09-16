@@ -1,7 +1,5 @@
-export default function refs() {
-  return {
-    searchForm: document.querySelector('#search-box'),
-    listForm: document.querySelector('.country-list'),
-    infoContainer: document.querySelector('.country-info'),
-  };
-}
+export const refs = {
+  searchForm: document.querySelector('#search-box'),
+  countryList: document.querySelector('.country-list'),
+  countryInfo: document.querySelector('.country-info'),
+};

@@ -13,19 +13,24 @@ export function onCountryCardTemplate({
   }" width="50" />
         <h2 class="card__name">${name.official}</h2>
       </div>
-      <p class="card__capital"><span class="card__weight">Capital:</span> ${capital}</p>
-      <p class="card__population"><span class="card__weight">Population:</span> ${population}</p>
-      <p class="card__languages"><span class="card__weight">Languages:</span> ${Object.values(
-        languages
-      )}</p>
+      <ul>
+        <li><p class="card__capital"><b class="card__weight">Capital:</b> ${capital}</p></li>
+        <li><p class="card__population"><b class="card__weight">Population:</b> ${population}</p></li>
+        <li><p class="card__languages"><b class="card__weight">Languages:</b> ${Object.values(
+          languages
+        )}</p></li>
+      </ul>
+      
+      
+      
     </div>
   `;
 }
 
 export function onCountryListTemplate({ flags, name }) {
   return `
-  <li class="card-list__item">
-    <img class="card-list__flags" src="${flags.svg}" alt="${name.official}" width="25" />
+  <li class="card__wrapper">
+    <img class="card__flags" src="${flags.svg}" alt="${name.official}" width="25" />
     <h2 class="card-list__name">${name.official}</h2>
   </li>
   `;
