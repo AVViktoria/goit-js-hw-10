@@ -1,6 +1,6 @@
 export default function fetchCountries(name) {
   
-  //name.preventDefault();
+  name.preventDefault();
   // const form = e.currentTarget;
   // const name = form.elements.query.value;
 
