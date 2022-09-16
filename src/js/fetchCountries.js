@@ -1,9 +1,4 @@
 export default function fetchCountries(name) {
-  
-  name.preventDefault();
-  // const form = e.currentTarget;
-  // const name = form.elements.query.value;
-
   return fetch(
     `https://restcountries.com/v3.1/name/${name}?fields=name,capital,population,flags,languages`
   ).then(response => {
